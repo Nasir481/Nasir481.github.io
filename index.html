@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md. Nasir Uddin Sikdar — Economics & Finance</title>
+<meta name="description" content="Portfolio of Md. Nasir Uddin Sikdar — postgraduate researcher in Economics and Finance, Manisa Celal Bayar University.">
+<meta property="og:title" content="Md. Nasir Uddin Sikdar">
+<meta property="og:description" content="Researcher in Economics, Finance & Public Policy.">
+<meta property="og:image" content="portrait.jpg">
+<link rel="icon" href="portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+  --bg:#f6f4ef; --bg-alt:#efece4; --surface:#ffffff; --text:#1b2220; --muted:#5a6461; --line:#e2ddd2;
+  --accent:#1f6b5c; --accent-2:#c8873a; --accent-soft:#e1eeea; --shadow:0 10px 30px -12px rgba(20,40,35,.18);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1312; --bg-alt:#141a18; --surface:#18201e; --text:#e8ecea; --muted:#9aa6a2; --line:#26302d;
+    --accent:#6cc3ad; --accent-2:#e3a65c; --accent-soft:#1a2c27; --shadow:0 10px 30px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1312; --bg-alt:#141a18; --surface:#18201e; --text:#e8ecea; --muted:#9aa6a2; --line:#26302d;
+  --accent:#6cc3ad; --accent-2:#e3a65c; --accent-soft:#1a2c27; --shadow:0 10px 30px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden;transition:background .4s,color .4s}
+a{color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* progress bar */
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));z-index:50}
+
+/* nav */
+header.nav{position:fixed;inset:0 0 auto;z-index:40;transition:background .3s,box-shadow .3s}
+header.nav.scrolled{background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-weight:700;font-size:1.15rem;text-decoration:none;color:var(--text)}
+.brand span{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--accent);color:var(--bg);font-size:.95rem}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+nav a{position:relative;display:block;padding:8px 12px;color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:500;border-radius:8px;transition:color .2s}
+nav a::after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav a:hover,nav a.active{color:var(--text)}
+nav a.active::after,nav a:hover::after{transform:scaleX(1)}
+.nav-right{display:flex;gap:8px;align-items:center}
+.icon-btn{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer;transition:transform .2s}
+.icon-btn:hover{transform:rotate(20deg)}
+#menuBtn{display:none}
+@media (max-width:860px){
+  #menuBtn{display:grid}
+  nav ul{position:fixed;top:68px;left:0;right:0;flex-direction:column;background:var(--surface);border-bottom:1px solid var(--line);padding:8px 0;transform:translateY(-120%);transition:transform .35s ease;z-index:-1}
+  nav ul.open{transform:none}
+  nav a{padding:12px 20px}
+  nav a::after{display:none}
+}
+
+/* hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.45;animation:float 14s ease-in-out infinite;z-index:0}
+.blob.b1{width:420px;height:420px;background:var(--accent);top:-120px;right:-100px}
+.blob.b2{width:320px;height:320px;background:var(--accent-2);bottom:-80px;left:-80px;animation-delay:-6s;opacity:.3}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,40px) scale(1.08)}}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:.82rem}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 60%,transparent)}100%{box-shadow:0 0 0 10px transparent}}
+h1{font-family:Fraunces,serif;font-size:clamp(2.4rem,6vw,4rem);line-height:1.05;margin:18px 0 12px;letter-spacing:-.02em}
+h1 .hl{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.typed{font-size:1.25rem;font-weight:600;color:var(--muted);min-height:1.8em}
+.typed b{color:var(--text)}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--accent);vertical-align:-3px;margin-left:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.lead{font-size:1.08rem;color:var(--muted);max-width:54ch}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--accent);transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{color:var(--accent);background:transparent}
+.socials{display:flex;gap:10px;margin-top:28px}
+.socials a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--surface);border:1px solid var(--line);color:var(--text);text-decoration:none;transition:all .25s}
+.socials a:hover{background:var(--accent);color:var(--bg);transform:translateY(-3px)}
+
+.portrait{position:relative;justify-self:center;width:min(360px,80vw);aspect-ratio:1}
+.portrait .ring{position:absolute;inset:-14px;border-radius:50%;background:conic-gradient(var(--accent),var(--accent-2),var(--accent));animation:spin 10s linear infinite;-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 0);mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 0)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:50%;box-shadow:var(--shadow);background:var(--surface)}
+.badge{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);font-size:.85rem;font-weight:600;animation:bob 5s ease-in-out infinite}
+.badge i{color:var(--accent);font-size:1.1rem}
+.badge.b-1{left:-30px;bottom:40px}
+.badge.b-2{right:-24px;top:30px;animation-delay:-2.5s}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.scroll-hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);color:var(--muted);font-size:1.2rem;animation:bob 2.2s ease-in-out infinite;z-index:1}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:48px;text-align:center}
+  .hero-grid .lead{margin:0 auto}
+  .btns,.socials{justify-content:center}
+  .portrait{order:-1;width:min(260px,70vw)}
+  .badge.b-1{left:-10px}.badge.b-2{right:-10px}
+}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-30px;position:relative;z-index:2}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;box-shadow:var(--shadow)}
+.stat i{font-size:1.4rem;color:var(--accent-2)}
+.stat .num{font-family:Fraunces,serif;font-size:2.2rem;font-weight:700;line-height:1.1;margin-top:6px}
+.stat .lbl{color:var(--muted);font-size:.88rem}
+@media (max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* sections */
+section{padding:96px 0}
+section.alt{background:var(--bg-alt)}
+.sec-head{margin-bottom:44px}
+.sec-head .kicker{display:flex;align-items:center;gap:10px;color:var(--accent);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.sec-head .kicker::before{content:"";width:28px;height:2px;background:currentColor}
+h2{font-family:Fraunces,serif;font-size:clamp(1.8rem,4vw,2.5rem);margin:10px 0 0;letter-spacing:-.01em}
+h3{margin:0 0 4px;font-size:1.08rem}
+.meta{color:var(--muted);font-size:.9rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+.ic{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--accent-soft);color:var(--accent);font-size:1.25rem;margin-bottom:16px;transition:transform .3s}
+.card:hover .ic{transform:rotate(-8deg) scale(1.08)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.photo-frame{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.photo-frame img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center top;transition:transform 1.2s ease}
+.photo-frame:hover img{transform:scale(1.06)}
+.photo-frame figcaption{position:absolute;left:14px;bottom:14px;display:flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.55);color:#fff;font-size:.82rem;backdrop-filter:blur(6px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:.88rem;font-weight:500}
+.chip i{color:var(--accent)}
+.updates{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:12px}
+.updates li{display:flex;gap:12px;align-items:flex-start}
+.updates i{color:var(--accent-2);margin-top:5px}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* timeline */
+.timeline{position:relative;list-style:none;margin:0;padding:0}
+.timeline::before{content:"";position:absolute;left:23px;top:0;bottom:0;width:2px;background:var(--line)}
+.timeline .fill{position:absolute;left:23px;top:0;width:2px;height:0;background:linear-gradient(var(--accent),var(--accent-2));transition:height .2s linear}
+.timeline li{position:relative;padding:0 0 32px 72px}
+.timeline .node{position:absolute;left:0;top:0;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:2px solid var(--accent);color:var(--accent);font-size:1.1rem;z-index:1}
+.timeline .card p{margin:10px 0 0}
+.pill{display:inline-block;margin-top:10px;padding:3px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent);font-size:.8rem;font-weight:600}
+
+/* publications */
+.pub{display:flex;gap:18px;align-items:flex-start}
+.pub .ic{flex:none;margin:0}
+.pub .kind{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent-2)}
+.pub p{margin:6px 0 0}
+.pub a.doi{display:inline-flex;align-items:center;gap:6px;margin-top:10px;font-weight:600;text-decoration:none}
+.pubs{display:grid;gap:18px}
+
+/* skills marquee */
+.marquee{overflow:hidden;padding:26px 0;border-block:1px solid var(--line);background:var(--surface);-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track{display:flex;gap:48px;width:max-content;animation:scroll 32s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.track span{display:flex;align-items:center;gap:10px;font-weight:600;color:var(--muted);white-space:nowrap}
+.track i{color:var(--accent);font-size:1.3rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* awards */
+.award{text-align:center}
+.award .ic{margin:0 auto 16px;width:64px;height:64px;border-radius:50%;font-size:1.6rem;background:linear-gradient(135deg,var(--accent-2),var(--accent));color:#fff}
+
+/* contact */
+.contact{position:relative;overflow:hidden;border-radius:28px;padding:64px 28px;text-align:center;color:#fff;background:linear-gradient(135deg,rgba(15,50,43,.88),rgba(31,107,92,.82)),url(campus.jpg) center/cover}
+.contact h2{color:#fff}
+.contact p{max-width:52ch;margin:14px auto 28px;opacity:.9}
+.contact .btn.primary{background:#fff;color:#1f6b5c;border-color:#fff}
+.contact .btn.ghost{color:#fff;border-color:rgba(255,255,255,.6)}
+.contact .btns{justify-content:center}
+footer{padding:36px 0;color:var(--muted);font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+#toTop{position:fixed;right:18px;bottom:18px;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;z-index:30;background:var(--accent);color:var(--bg);border:none}
+#toTop.show{opacity:1;pointer-events:auto}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.left{transform:translateX(-40px)}
+.reveal.right{transform:translateX(40px)}
+.reveal.zoom{transform:scale(.92)}
+.reveal.in{opacity:1;transform:none}
+.hero .reveal{transition-duration:1s}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span>NU</span>Nasir Uddin</a>
+    <div class="nav-right">
+      <nav aria-label="Main">
+        <ul id="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="theme" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow reveal"><span class="dot"></span>Open to research collaborations</div>
+        <h1 class="reveal">Hi, I'm <span class="hl">Md. Nasir Uddin Sikdar</span></h1>
+        <div class="typed reveal" aria-live="polite"><b id="typed"></b><span class="caret"></span></div>
+        <p class="lead reveal">Postgraduate student in Economics and Finance at Manisa Celal Bayar University, Türkiye — researching energy, governance and financial development, and training students to thrive in the modern workplace.</p>
+        <div class="btns reveal">
+          <a class="btn primary" href="#contact"><i class="fa-solid fa-paper-plane"></i>Get in touch</a>
+          <a class="btn ghost" href="#publications"><i class="fa-solid fa-book-open"></i>Publications</a>
+        </div>
+        <div class="socials reveal">
+          <a href="https://www.linkedin.com/in/nasirsikder/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:nasirsikder481@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://sites.google.com/view/nasirju/" target="_blank" rel="noopener" aria-label="Google Site"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+      <div class="portrait reveal zoom">
+        <div class="ring"></div>
+        <img src="portrait.jpg" alt="Portrait of Md. Nasir Uddin Sikdar" width="340" height="340">
+        <div class="badge b-1"><i class="fa-solid fa-graduation-cap"></i>MSc Economics &amp; Finance</div>
+        <div class="badge b-2"><i class="fa-solid fa-chart-line"></i>FinTech</div>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#about" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+  </div>
+
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><i class="fa-solid fa-file-lines"></i><div class="num" data-count="3">0</div><div class="lbl">Research papers</div></div>
+      <div class="stat reveal"><i class="fa-solid fa-chalkboard-user"></i><div class="num" data-count="4">0</div><div class="lbl">Workshops led</div></div>
+      <div class="stat reveal"><i class="fa-solid fa-award"></i><div class="num" data-count="3">0</div><div class="lbl">Awards</div></div>
+      <div class="stat reveal"><i class="fa-solid fa-star"></i><div class="num" data-count="3.62" data-dec="2">0</div><div class="lbl">BBA CGPA</div></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <figure class="photo-frame reveal left" style="margin:0">
+        <img src="campus.jpg" alt="Nasir on the university campus" loading="lazy">
+        <figcaption><i class="fa-solid fa-location-dot"></i>Manisa, Türkiye</figcaption>
+      </figure>
+      <div class="reveal right">
+        <div class="sec-head" style="margin-bottom:16px"><div class="kicker">About me</div><h2>Economics, finance &amp; the people behind them</h2></div>
+        <p>I'm enrolled in a Master's program in Economics and Finance at Manisa Celal Bayar University. Alongside my studies, I train students to perform better in their careers — covering Microsoft Office, Google Workspace and tools like Trello, QuickBooks and Xero.</p>
+        <div class="chips">
+          <span class="chip"><i class="fa-solid fa-landmark"></i>Public Policy</span>
+          <span class="chip"><i class="fa-solid fa-scale-balanced"></i>Economics</span>
+          <span class="chip"><i class="fa-solid fa-coins"></i>FinTech</span>
+          <span class="chip"><i class="fa-solid fa-mosque"></i>Islamic Finance</span>
+        </div>
+        <ul class="updates">
+          <li><i class="fa-solid fa-flask"></i><span>Working on two research projects — one with two professors in Türkiye, another with a professor in Bangladesh.</span></li>
+          <li><i class="fa-solid fa-person-chalkboard"></i><span>Available to run training on MS Office, Google Workspace, e‑mail writing and office software.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal"><div class="kicker">Education</div><h2>Academic journey</h2></div>
+      <ul class="timeline" id="tl">
+        <span class="fill"></span>
+        <li class="reveal">
+          <div class="node"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="card">
+            <h3>Master's in Economics and Finance</h3>
+            <div class="meta"><i class="fa-regular fa-calendar"></i> Oct 2025 – present · Institute of Social Sciences, Manisa Celal Bayar University, Türkiye</div>
+            <p>International Trade Financing, Advanced Macroeconomic Analysis, Applied Econometrics, Financial Management, Research Methods &amp; Publication Ethics.</p>
+            <span class="pill">In progress</span>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="node"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="card">
+            <h3>BBA, Major in Finance and Banking</h3>
+            <div class="meta"><i class="fa-regular fa-calendar"></i> Feb 2019 – Jul 2024 · Jahangirnagar University, Dhaka</div>
+            <p>Corporate Finance, Financial Markets &amp; Institutions, Financial Statement Analysis, Bank Financial Management, Portfolio Management, Investment Banking.</p>
+            <span class="pill">CGPA 3.62</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="wrap">
+      <div class="sec-head reveal"><div class="kicker">Experience</div><h2>Research experience</h2></div>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="ic"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>Research Coordinator</h3>
+          <div class="meta">AKFA Memorial Research Center · Apr 2020 – Nov 2021</div>
+          <p>Research Mate in the Finance Cluster, supporting finance-focused research projects.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ic"><i class="fa-solid fa-virus-covid"></i></div>
+          <h3>Research Assistant</h3>
+          <div class="meta">Prof. Mohammad Jakir Hosen Research Group, SUST · Mar 2020</div>
+          <p>Data collector for the COVID‑19 Research Project 2019–20 — my first hands‑on research role.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ic"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Ongoing collaborations</h3>
+          <div class="meta">Türkiye &amp; Bangladesh · 2025 – present</div>
+          <p>Two active projects with professors in Türkiye and Bangladesh on growth, energy and governance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal"><div class="kicker">Publications</div><h2>Selected work</h2></div>
+      <div class="pubs">
+        <article class="card pub reveal">
+          <div class="ic"><i class="fa-solid fa-book"></i></div>
+          <div>
+            <div class="kind">Journal article · 2026</div>
+            <h3>Natural resource rents and energy poverty nexus in next eleven economies</h3>
+            <p class="meta">Salah Uddin, M., Ali, A., Ahmed, Z., <strong>Sikdar, M. N. U.</strong>, Habib, A., &amp; Al‑Mahde, A. E. — <em>Discover Sustainability</em></p>
+            <a class="doi" href="https://doi.org/10.1007/s43621-026-03411-6" target="_blank" rel="noopener">Read paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+        <article class="card pub reveal">
+          <div class="ic"><i class="fa-solid fa-microphone-lines"></i></div>
+          <div>
+            <div class="kind">Conference paper · 2025</div>
+            <h3>Effect of E‑Governance and Financial Development on Economic Growth: A Study in N11 Countries</h3>
+            <p class="meta"><strong>Sikdar, M. N. U.</strong>, Mammadov, V., Görhan, C., Cüce, T., Yıldız, S. B., &amp; İşçi, C.</p>
+          </div>
+        </article>
+        <article class="card pub reveal">
+          <div class="ic"><i class="fa-solid fa-microphone-lines"></i></div>
+          <div>
+            <div class="kind">Conference paper · 2023</div>
+            <h3>The Universal Pension Scheme and SDGs in Bangladesh: A Critical Evaluation</h3>
+            <p class="meta">Ahmed, Z., <strong>Sikdar, M. N. U.</strong>, &amp; Ali, A. — INSEARCH‑2023, BARD, Cumilla</p>
+          </div>
+        </article>
+        <article class="card pub reveal">
+          <div class="ic"><i class="fa-solid fa-newspaper"></i></div>
+          <div>
+            <div class="kind">Editorial</div>
+            <h3>Magazine editing</h3>
+            <p class="meta">Editor, <em>Sense of Return</em> (Finance Fest 2023) · Sub‑editor, <em>Protiddhoni</em> (2022)</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS MARQUEE -->
+  <div class="marquee" aria-label="Tools I train">
+    <div class="track">
+      <span><i class="fa-solid fa-file-excel"></i>Excel</span><span><i class="fa-solid fa-file-powerpoint"></i>PowerPoint</span><span><i class="fa-solid fa-file-word"></i>Word</span><span><i class="fa-solid fa-envelope-open-text"></i>Outlook</span><span><i class="fa-brands fa-google"></i>Google Workspace</span><span><i class="fa-brands fa-trello"></i>Trello</span><span><i class="fa-solid fa-calculator"></i>QuickBooks</span><span><i class="fa-solid fa-receipt"></i>Xero</span><span><i class="fa-solid fa-chart-simple"></i>Econometrics</span>
+      <span aria-hidden="true"><i class="fa-solid fa-file-excel"></i>Excel</span><span aria-hidden="true"><i class="fa-solid fa-file-powerpoint"></i>PowerPoint</span><span aria-hidden="true"><i class="fa-solid fa-file-word"></i>Word</span><span aria-hidden="true"><i class="fa-solid fa-envelope-open-text"></i>Outlook</span><span aria-hidden="true"><i class="fa-brands fa-google"></i>Google Workspace</span><span aria-hidden="true"><i class="fa-brands fa-trello"></i>Trello</span><span aria-hidden="true"><i class="fa-solid fa-calculator"></i>QuickBooks</span><span aria-hidden="true"><i class="fa-solid fa-receipt"></i>Xero</span><span aria-hidden="true"><i class="fa-solid fa-chart-simple"></i>Econometrics</span>
+    </div>
+  </div>
+
+  <!-- TRAINING -->
+  <section id="training">
+    <div class="wrap">
+      <div class="sec-head reveal"><div class="kicker">Trainer &amp; speaker</div><h2>Workshops &amp; talks</h2></div>
+      <div class="grid">
+        <div class="card reveal"><div class="ic"><i class="fa-solid fa-table"></i></div><h3>ExTrack</h3><div class="meta">2022 · JU Career Club</div><p>Hands-on Microsoft Excel workshop.</p></div>
+        <div class="card reveal"><div class="ic"><i class="fa-solid fa-display"></i></div><h3>JUSC IT Workshop</h3><div class="meta">2022 · JU Science Club</div><p>Microsoft PowerPoint for presentations.</p></div>
+        <div class="card reveal"><div class="ic"><i class="fa-solid fa-briefcase"></i></div><h3>Be an Office Expert · ExcelyticA</h3><div class="meta">2021 · JUSC &amp; AnalyticA JU</div><p>PowerPoint and Excel workshops.</p></div>
+        <div class="card reveal"><div class="ic"><i class="fa-solid fa-podcast"></i></div><h3>2nd Business Studies Summit</h3><div class="meta">Speaker</div><p>Awakening business and Islamic economic thinking among youth.</p></div>
+        <div class="card reveal"><div class="ic"><i class="fa-solid fa-pen-nib"></i></div><h3>Basic Journalism</h3><div class="meta">Certificate · Press Institute Bangladesh · 2021</div><p>Three-day workshop on news gathering and reporting.</p></div>
+        <div class="card reveal"><div class="ic"><i class="fa-brands fa-facebook-f"></i></div><h3>Facebook Fundamentals for News</h3><div class="meta">Certificate · C‑CAB · 2021</div><p>Verification and responsible news on social media.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal"><div class="kicker">Recognition</div><h2>Awards &amp; achievements</h2></div>
+      <div class="grid">
+        <div class="card award reveal zoom"><div class="ic"><i class="fa-solid fa-trophy"></i></div><h3>Champion, Project HOW S3</h3><div class="meta">FEB, Jahangirnagar University · 2019</div></div>
+        <div class="card award reveal zoom"><div class="ic"><i class="fa-solid fa-person-running"></i></div><h3>Half Marathon Finisher</h3><div class="meta">Bangabandhu Half Marathon · 2020</div></div>
+        <div class="card award reveal zoom"><div class="ic"><i class="fa-solid fa-feather-pointed"></i></div><h3>5th Place, Essay Competition</h3><div class="meta">Rotaract Club of JU · 2021</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact reveal zoom">
+        <h2>Let's work together</h2>
+        <p>Open to research collaborations in FinTech, Islamic banking and economics — and to running training sessions for students and teams.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:nasirsikder481@gmail.com"><i class="fa-solid fa-envelope"></i>nasirsikder481@gmail.com</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/nasirsikder/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Md. Nasir Uddin Sikdar</span>
+    <span>Made with <i class="fa-solid fa-heart" style="color:var(--accent-2)"></i> in Manisa</span>
+  </div>
+</footer>
+<button class="icon-btn" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  $('#yr').textContent = new Date().getFullYear();
+
+  // Theme
+  const root = document.documentElement, themeBtn = $('#theme');
+  const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  const syncIcon = () => themeBtn.innerHTML = `<i class="fa-solid fa-${isDark() ? 'sun' : 'moon'}"></i>`;
+  try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+  syncIcon();
+  themeBtn.onclick = () => {
+    root.dataset.theme = isDark() ? 'light' : 'dark'; syncIcon();
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  };
+
+  // Mobile menu
+  const menu = $('#menu'), mb = $('#menuBtn');
+  const setMenu = o => { menu.classList.toggle('open', o); mb.setAttribute('aria-expanded', o); mb.innerHTML = `<i class="fa-solid fa-${o ? 'xmark' : 'bars'}"></i>`; };
+  mb.onclick = () => setMenu(!menu.classList.contains('open'));
+  $$('#menu a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+
+  // Typing effect
+  const roles = ['Economics & Finance Researcher', 'Public Policy Enthusiast', 'FinTech Explorer', 'Office Skills Trainer'];
+  const el = $('#typed');
+  if (reduce) el.textContent = roles[0];
+  else {
+    let r = 0, i = 0, del = false;
+    (function tick() {
+      const w = roles[r];
+      el.textContent = w.slice(0, i += del ? -1 : 1);
+      let d = del ? 40 : 80;
+      if (!del && i === w.length) { del = true; d = 1600; }
+      else if (del && i === 0) { del = false; r = (r + 1) % roles.length; d = 300; }
+      setTimeout(tick, d);
+    })();
+  }
+
+  // Counters
+  const count = n => {
+    const target = parseFloat(n.dataset.count), dec = +(n.dataset.dec || 0), t0 = performance.now(), dur = 1400;
+    const step = t => { const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      n.textContent = (target * e).toFixed(dec) + (p === 1 && !dec ? '+' : ''); if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  };
+
+  // Reveal on scroll (staggered)
+  const io = new IntersectionObserver(entries => entries.forEach(en => {
+    if (!en.isIntersecting) return;
+    const t = en.target, sibs = [...t.parentElement.children].filter(c => c.classList.contains('reveal'));
+    t.style.transitionDelay = Math.max(0, sibs.indexOf(t)) * 90 + 'ms';
+    t.classList.add('in');
+    t.querySelectorAll('[data-count]').forEach(count);
+    io.unobserve(t);
+  }), { threshold: .15, rootMargin: '0px 0px -40px 0px' });
+  $$('.reveal').forEach(e => io.observe(e));
+
+  // Scroll: nav, progress, timeline fill, active link, back-to-top
+  const nav = $('#nav'), bar = $('#progress'), top = $('#toTop'), tl = $('#tl'), fill = tl.querySelector('.fill');
+  const links = [...$$('#menu a')], secs = links.map(a => $(a.getAttribute('href')));
+  const onScroll = () => {
+    const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
+    nav.classList.toggle('scrolled', y > 20);
+    bar.style.width = (y / h * 100) + '%';
+    top.classList.toggle('show', y > 600);
+    const r = tl.getBoundingClientRect();
+    fill.style.height = Math.min(Math.max(innerHeight * .6 - r.top, 0), r.height) + 'px';
+    let cur = null; secs.forEach((s, i) => { if (s.getBoundingClientRect().top < innerHeight * .4) cur = i; });
+    links.forEach((a, i) => a.classList.toggle('active', i === cur));
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  top.onclick = () => scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+
+  // Portrait tilt
+  const p = $('.portrait');
+  if (!reduce && matchMedia('(hover:hover)').matches) {
+    p.addEventListener('mousemove', e => { const b = p.getBoundingClientRect(), x = (e.clientX - b.left) / b.width - .5, y = (e.clientY - b.top) / b.height - .5;
+      p.style.transform = `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg)`; });
+    p.addEventListener('mouseleave', () => p.style.transform = '');
+  }
+})();
+</script>
+</body>
+</html>
