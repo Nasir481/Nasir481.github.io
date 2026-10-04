@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -195,9 +195,38 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   .reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
+
+/* Refined academic portfolio */
+:root{--bg:#f8f7f2;--bg-alt:#f0f1eb;--surface:#fff;--text:#172d2b;--muted:#586764;--line:#dce2dc;--accent:#17675c;--accent-2:var(--accent);--accent-soft:#e8f0eb;--shadow:0 12px 32px rgba(20,45,40,.06)}
+:root[data-theme="dark"]{--bg:#111e1c;--bg-alt:#172623;--surface:#1b2e2a;--text:#edf4ef;--muted:#b2c3bb;--line:#344940;--accent:#8ed6bc;--accent-2:var(--accent);--accent-soft:#253e34}
+.wrap{max-width:1160px;padding-inline:32px;width:100%}
+header.nav{background:var(--bg);border-bottom:1px solid var(--line)}
+header.nav .wrap{height:80px}.brand{font-size:1.2rem}.brand span{border-radius:50%;width:38px;height:38px}
+nav a{padding:8px 14px;font-size:.85rem}.icon-btn:hover{transform:none}
+.hero{min-height:0;padding:150px 0 70px}.hero-grid{grid-template-columns:1.5fr 1fr;gap:80px}
+.blob,.scroll-hint,#progress{display:none}.eyebrow{padding:0;background:none;font-size:.75rem;letter-spacing:.04em}.eyebrow .dot{animation:none}
+h1{font-size:clamp(2.7rem,5.8vw,4.8rem);font-weight:500;line-height:1.06;margin:24px 0 18px;letter-spacing:-.045em}h1 .hl{background:none;color:var(--text)}
+.typed{font-size:1rem;font-weight:600;color:var(--accent);letter-spacing:.015em}.lead{font-size:.98rem;line-height:1.75;max-width:46ch;margin-top:20px}
+.btn{border-radius:5px;padding:13px 20px;font-size:.85rem}.btns{margin-top:26px}.btn span{margin-left:12px}.socials{margin-top:22px}.socials a{width:34px;height:34px;background:none;border:none;border-radius:4px}
+.portrait{width:100%;max-width:320px;aspect-ratio:auto;align-self:center}.portrait img{height:365px;border-radius:160px 160px 8px 8px;object-position:center top;box-shadow:none;border:1px solid var(--line)}
+.portrait-caption{margin:18px 0 0;font-size:.65rem;letter-spacing:.1em;color:var(--muted);text-align:center;line-height:2}.portrait-caption span{font-size:.8rem;letter-spacing:0;color:var(--text)}
+.stats{margin:0;gap:0;border-block:1px solid var(--line);padding:22px 0}.stat{padding:6px 24px;border:0;border-right:1px solid var(--line);border-radius:0;background:none;box-shadow:none;text-align:left}.stat:last-child{border:0}.stat i{display:none}.stat .num{font-size:1.8rem;font-weight:500;margin:0}.stat .lbl{font-size:.76rem}
+section{padding:76px 0}.sec-head{margin-bottom:30px}.sec-head .kicker{font-size:.7rem;letter-spacing:.14em}h2{font-weight:500;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2}.section-intro{color:var(--muted);font-size:.95rem;max-width:55ch}
+.card{border-radius:8px;padding:26px;box-shadow:none}.card:hover{transform:none;box-shadow:none;border-color:var(--accent)}.card:hover .ic{transform:none}.ic{border-radius:6px;width:38px;height:38px;font-size:1rem}
+.pubs{grid-template-columns:1fr 1fr;gap:16px}.pub.featured{grid-column:1/-1;padding:34px;border-left:3px solid var(--accent)}.featured h3{font-family:Fraunces,serif;font-size:1.6rem;line-height:1.35;max-width:38ch;font-weight:500}.pub .kind{color:var(--accent);font-size:.65rem;margin-bottom:10px}.pub h3{line-height:1.5}.pub:last-child{grid-column:1/-1}.pub .ic{display:none}.pub a.doi{border-bottom:1px solid var(--accent);padding-bottom:3px;font-size:.85rem}.pub .meta{font-size:.82rem;line-height:1.8}
+.about-grid{gap:60px}.photo-frame{border-radius:8px;box-shadow:none}.photo-frame img{transition:none}.photo-frame:hover img{transform:none}.chip{border-radius:4px;font-size:.76rem;padding:5px 10px}.updates{font-size:.9rem}.timeline .card p{font-size:.9rem}.timeline li:last-child{padding-bottom:0}
+.marquee{mask:none;-webkit-mask:none;padding:24px 32px}.track{max-width:1096px;margin:auto;width:auto;animation:none;flex-wrap:wrap;gap:18px 28px}.track span{font-size:.8rem}.track [aria-hidden]{display:none}
+.award{text-align:left}.award .ic{margin:0 0 16px;width:38px;height:38px;font-size:1rem;border-radius:6px;background:var(--accent-soft);color:var(--accent)}
+.contact{border-radius:8px;background:#194d43;padding:54px 24px}.contact h2{font-weight:500}.contact p{font-size:.95rem}.contact .btn{overflow-wrap:anywhere;max-width:100%}
+.reveal,.reveal.left,.reveal.right,.reveal.zoom{opacity:1;transform:none;transition:none}.badge{animation:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.skip-link{position:fixed;top:-100px;left:16px;z-index:100;background:var(--surface);padding:12px}.skip-link:focus{top:12px}
+@media(max-width:860px){header.nav .wrap{height:68px}.hero{padding:112px 0 48px}.hero-grid{grid-template-columns:1fr;gap:36px;text-align:left}.hero-grid .lead{margin:20px 0 0}.btns,.socials{justify-content:flex-start}.portrait{order:0;width:210px;justify-self:start}.portrait img{height:235px}.portrait-caption{text-align:left}.about-grid{gap:30px}.wrap{padding-inline:24px}nav ul{visibility:hidden;pointer-events:none}nav ul.open{visibility:visible;pointer-events:auto}section{padding:56px 0}.pubs{grid-template-columns:1fr}.pub.featured{padding:24px}.pub:last-child{grid-column:auto}.featured h3{font-size:1.35rem}}
+@media(max-width:480px){.wrap{padding-inline:20px}.brand{font-size:1rem}.hero{padding-top:100px}h1{font-size:2.9rem}.lead{font-size:.92rem}.btns{gap:10px}.btn{padding:12px 14px}.stats{row-gap:20px}.stat{padding:0 16px}.stat:nth-child(2){border:0}.stat .lbl{font-size:.72rem}.timeline li{padding-left:52px}.timeline .node{width:34px;height:34px;font-size:.85rem}.timeline::before,.timeline .fill{left:16px}.timeline .card{padding:18px}.contact .btn{font-size:.76rem;padding-inline:12px}.contact{padding:40px 18px}}
+
 </style>
 </head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 <div id="progress"></div>
 
 <header class="nav" id="nav">
@@ -207,11 +236,8 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
       <nav aria-label="Main">
         <ul id="menu">
           <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#publications">Publications</a></li>
-          <li><a href="#training">Training</a></li>
-          <li><a href="#awards">Awards</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -228,12 +254,12 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     <div class="wrap hero-grid">
       <div>
         <div class="eyebrow reveal"><span class="dot"></span>Open to research collaborations</div>
-        <h1 class="reveal">Hi, I'm <span class="hl">Md. Nasir Uddin Sikdar</span></h1>
-        <div class="typed reveal" aria-live="polite"><b id="typed"></b><span class="caret"></span></div>
-        <p class="lead reveal">Postgraduate student in Economics and Finance at Manisa Celal Bayar University, Türkiye — researching energy, governance and financial development, and training students to thrive in the modern workplace.</p>
+        <h1 class="reveal"><span class="hl">Md. Nasir<br>Uddin Sikdar</span></h1>
+        <div class="typed">Economics &amp; Finance Researcher</div>
+        <p class="lead reveal">Exploring how energy, governance and financial development shape economies.<br><br>Master’s student at Manisa Celal Bayar University, Türkiye, and a trainer in practical workplace skills.</p>
         <div class="btns reveal">
-          <a class="btn primary" href="#contact"><i class="fa-solid fa-paper-plane"></i>Get in touch</a>
-          <a class="btn ghost" href="#publications"><i class="fa-solid fa-book-open"></i>Publications</a>
+          <a class="btn primary" href="#publications">Explore my research <span aria-hidden="true">↗</span></a>
+          <a class="btn ghost" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
         </div>
         <div class="socials reveal">
           <a href="https://www.linkedin.com/in/nasirsikder/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -242,23 +268,65 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
         </div>
       </div>
       <div class="portrait reveal zoom">
-        <div class="ring"></div>
+        
         <img src="portrait.jpg" alt="Portrait of Md. Nasir Uddin Sikdar" width="340" height="340">
-        <div class="badge b-1"><i class="fa-solid fa-graduation-cap"></i>MSc Economics &amp; Finance</div>
-        <div class="badge b-2"><i class="fa-solid fa-chart-line"></i>FinTech</div>
-      </div>
+        
+        
+      <p class="portrait-caption">BASED IN MANISA, TÜRKİYE<br><span>Research · Teaching · Collaboration</span></p></div>
     </div>
     <a class="scroll-hint" href="#about" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
   </div>
 
   <div class="wrap">
     <div class="stats">
-      <div class="stat reveal"><i class="fa-solid fa-file-lines"></i><div class="num" data-count="3">0</div><div class="lbl">Research papers</div></div>
-      <div class="stat reveal"><i class="fa-solid fa-chalkboard-user"></i><div class="num" data-count="4">0</div><div class="lbl">Workshops led</div></div>
-      <div class="stat reveal"><i class="fa-solid fa-award"></i><div class="num" data-count="3">0</div><div class="lbl">Awards</div></div>
-      <div class="stat reveal"><i class="fa-solid fa-star"></i><div class="num" data-count="3.62" data-dec="2">0</div><div class="lbl">BBA CGPA</div></div>
+      <div class="stat reveal"><i class="fa-solid fa-file-lines"></i><div class="num" data-count="3">3</div><div class="lbl">Research papers</div></div>
+      <div class="stat reveal"><i class="fa-solid fa-chalkboard-user"></i><div class="num" data-count="4">4</div><div class="lbl">Workshops led</div></div>
+      <div class="stat reveal"><i class="fa-solid fa-award"></i><div class="num" data-count="3">3</div><div class="lbl">Awards</div></div>
+      <div class="stat reveal"><i class="fa-solid fa-star"></i><div class="num" data-count="3.62" data-dec="2">3.62</div><div class="lbl">BBA CGPA</div></div>
     </div>
   </div>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal"><div class="kicker">Publications</div><h2>Research &amp; publications</h2><p class="section-intro">Energy, governance and financial development in emerging economies.</p></div>
+      <div class="pubs">
+        <article class="card pub reveal featured">
+          <div class="ic"><i class="fa-solid fa-book"></i></div>
+          <div>
+            <div class="kind">Featured publication · Journal article · 2026</div>
+            <h3>Natural resource rents and energy poverty nexus in next eleven economies</h3>
+            <p class="meta">Salah Uddin, M., Ali, A., Ahmed, Z., <strong>Sikdar, M. N. U.</strong>, Habib, A., &amp; Al‑Mahde, A. E. — <em>Discover Sustainability</em></p>
+            <a class="doi" href="https://doi.org/10.1007/s43621-026-03411-6" target="_blank" rel="noopener">Read paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+        <article class="card pub reveal">
+          <div class="ic"><i class="fa-solid fa-microphone-lines"></i></div>
+          <div>
+            <div class="kind">Conference paper · 2025</div>
+            <h3>Effect of E‑Governance and Financial Development on Economic Growth: A Study in N11 Countries</h3>
+            <p class="meta"><strong>Sikdar, M. N. U.</strong>, Mammadov, V., Görhan, C., Cüce, T., Yıldız, S. B., &amp; İşçi, C.</p>
+          </div>
+        </article>
+        <article class="card pub reveal">
+          <div class="ic"><i class="fa-solid fa-microphone-lines"></i></div>
+          <div>
+            <div class="kind">Conference paper · 2023</div>
+            <h3>The Universal Pension Scheme and SDGs in Bangladesh: A Critical Evaluation</h3>
+            <p class="meta">Ahmed, Z., <strong>Sikdar, M. N. U.</strong>, &amp; Ali, A. — INSEARCH‑2023, BARD, Cumilla</p>
+          </div>
+        </article>
+        <article class="card pub reveal">
+          <div class="ic"><i class="fa-solid fa-newspaper"></i></div>
+          <div>
+            <div class="kind">Editorial</div>
+            <h3>Magazine editing</h3>
+            <p class="meta">Editor, <em>Sense of Return</em> (Finance Fest 2023) · Sub‑editor, <em>Protiddhoni</em> (2022)</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- ABOUT -->
   <section id="about">
@@ -339,48 +407,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
     </div>
   </section>
 
-  <!-- PUBLICATIONS -->
-  <section id="publications" class="alt">
-    <div class="wrap">
-      <div class="sec-head reveal"><div class="kicker">Publications</div><h2>Selected work</h2></div>
-      <div class="pubs">
-        <article class="card pub reveal">
-          <div class="ic"><i class="fa-solid fa-book"></i></div>
-          <div>
-            <div class="kind">Journal article · 2026</div>
-            <h3>Natural resource rents and energy poverty nexus in next eleven economies</h3>
-            <p class="meta">Salah Uddin, M., Ali, A., Ahmed, Z., <strong>Sikdar, M. N. U.</strong>, Habib, A., &amp; Al‑Mahde, A. E. — <em>Discover Sustainability</em></p>
-            <a class="doi" href="https://doi.org/10.1007/s43621-026-03411-6" target="_blank" rel="noopener">Read paper <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-        </article>
-        <article class="card pub reveal">
-          <div class="ic"><i class="fa-solid fa-microphone-lines"></i></div>
-          <div>
-            <div class="kind">Conference paper · 2025</div>
-            <h3>Effect of E‑Governance and Financial Development on Economic Growth: A Study in N11 Countries</h3>
-            <p class="meta"><strong>Sikdar, M. N. U.</strong>, Mammadov, V., Görhan, C., Cüce, T., Yıldız, S. B., &amp; İşçi, C.</p>
-          </div>
-        </article>
-        <article class="card pub reveal">
-          <div class="ic"><i class="fa-solid fa-microphone-lines"></i></div>
-          <div>
-            <div class="kind">Conference paper · 2023</div>
-            <h3>The Universal Pension Scheme and SDGs in Bangladesh: A Critical Evaluation</h3>
-            <p class="meta">Ahmed, Z., <strong>Sikdar, M. N. U.</strong>, &amp; Ali, A. — INSEARCH‑2023, BARD, Cumilla</p>
-          </div>
-        </article>
-        <article class="card pub reveal">
-          <div class="ic"><i class="fa-solid fa-newspaper"></i></div>
-          <div>
-            <div class="kind">Editorial</div>
-            <h3>Magazine editing</h3>
-            <p class="meta">Editor, <em>Sense of Return</em> (Finance Fest 2023) · Sub‑editor, <em>Protiddhoni</em> (2022)</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- SKILLS MARQUEE -->
   <div class="marquee" aria-label="Tools I train">
     <div class="track">
@@ -441,85 +467,21 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 
 <script>
 (() => {
-  const $ = s => document.querySelector(s), $$ = s => document.querySelectorAll(s);
-  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  $('#yr').textContent = new Date().getFullYear();
-
-  // Theme
-  const root = document.documentElement, themeBtn = $('#theme');
-  const isDark = () => root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
-  const syncIcon = () => themeBtn.innerHTML = `<i class="fa-solid fa-${isDark() ? 'sun' : 'moon'}"></i>`;
-  try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
-  syncIcon();
-  themeBtn.onclick = () => {
-    root.dataset.theme = isDark() ? 'light' : 'dark'; syncIcon();
-    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
-  };
-
-  // Mobile menu
-  const menu = $('#menu'), mb = $('#menuBtn');
-  const setMenu = o => { menu.classList.toggle('open', o); mb.setAttribute('aria-expanded', o); mb.innerHTML = `<i class="fa-solid fa-${o ? 'xmark' : 'bars'}"></i>`; };
-  mb.onclick = () => setMenu(!menu.classList.contains('open'));
-  $$('#menu a').forEach(a => a.addEventListener('click', () => setMenu(false)));
-
-  // Typing effect
-  const roles = ['Economics & Finance Researcher', 'Public Policy Enthusiast', 'FinTech Explorer', 'Office Skills Trainer'];
-  const el = $('#typed');
-  if (reduce) el.textContent = roles[0];
-  else {
-    let r = 0, i = 0, del = false;
-    (function tick() {
-      const w = roles[r];
-      el.textContent = w.slice(0, i += del ? -1 : 1);
-      let d = del ? 40 : 80;
-      if (!del && i === w.length) { del = true; d = 1600; }
-      else if (del && i === 0) { del = false; r = (r + 1) % roles.length; d = 300; }
-      setTimeout(tick, d);
-    })();
-  }
-
-  // Counters
-  const count = n => {
-    const target = parseFloat(n.dataset.count), dec = +(n.dataset.dec || 0), t0 = performance.now(), dur = 1400;
-    const step = t => { const p = Math.min((t - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
-      n.textContent = (target * e).toFixed(dec) + (p === 1 && !dec ? '+' : ''); if (p < 1) requestAnimationFrame(step); };
-    requestAnimationFrame(step);
-  };
-
-  // Reveal on scroll (staggered)
-  const io = new IntersectionObserver(entries => entries.forEach(en => {
-    if (!en.isIntersecting) return;
-    const t = en.target, sibs = [...t.parentElement.children].filter(c => c.classList.contains('reveal'));
-    t.style.transitionDelay = Math.max(0, sibs.indexOf(t)) * 90 + 'ms';
-    t.classList.add('in');
-    t.querySelectorAll('[data-count]').forEach(count);
-    io.unobserve(t);
-  }), { threshold: .15, rootMargin: '0px 0px -40px 0px' });
-  $$('.reveal').forEach(e => io.observe(e));
-
-  // Scroll: nav, progress, timeline fill, active link, back-to-top
-  const nav = $('#nav'), bar = $('#progress'), top = $('#toTop'), tl = $('#tl'), fill = tl.querySelector('.fill');
-  const links = [...$$('#menu a')], secs = links.map(a => $(a.getAttribute('href')));
-  const onScroll = () => {
-    const y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
-    nav.classList.toggle('scrolled', y > 20);
-    bar.style.width = (y / h * 100) + '%';
-    top.classList.toggle('show', y > 600);
-    const r = tl.getBoundingClientRect();
-    fill.style.height = Math.min(Math.max(innerHeight * .6 - r.top, 0), r.height) + 'px';
-    let cur = null; secs.forEach((s, i) => { if (s.getBoundingClientRect().top < innerHeight * .4) cur = i; });
-    links.forEach((a, i) => a.classList.toggle('active', i === cur));
-  };
-  addEventListener('scroll', onScroll, { passive: true }); onScroll();
-  top.onclick = () => scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
-
-  // Portrait tilt
-  const p = $('.portrait');
-  if (!reduce && matchMedia('(hover:hover)').matches) {
-    p.addEventListener('mousemove', e => { const b = p.getBoundingClientRect(), x = (e.clientX - b.left) / b.width - .5, y = (e.clientY - b.top) / b.height - .5;
-      p.style.transform = `perspective(800px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg)`; });
-    p.addEventListener('mouseleave', () => p.style.transform = '');
-  }
+const $ = s => document.querySelector(s);
+$('#yr').textContent = new Date().getFullYear();
+const root = document.documentElement, theme = $('#theme'), menu = $('#menu'), button = $('#menuBtn');
+try { root.dataset.theme = localStorage.getItem('theme') || 'light'; } catch (_) {}
+const syncTheme = () => { const dark = root.dataset.theme === 'dark'; theme.innerHTML = `<i aria-hidden="true" class="fa-solid fa-${dark ? 'sun' : 'moon'}"></i>`; theme.setAttribute('aria-label', `Switch to ${dark ? 'light' : 'dark'} mode`); };
+syncTheme();
+theme.onclick = () => { root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark'; syncTheme(); try { localStorage.setItem('theme', root.dataset.theme); } catch (_) {} };
+const setMenu = open => { menu.classList.toggle('open', open); button.setAttribute('aria-expanded', String(open)); button.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); button.innerHTML = `<i aria-hidden="true" class="fa-solid fa-${open ? 'xmark' : 'bars'}"></i>`; };
+button.onclick = () => setMenu(!menu.classList.contains('open'));
+menu.querySelectorAll('a').forEach(a => a.onclick = () => setMenu(false));
+document.addEventListener('keydown', e => { if(e.key === 'Escape' && menu.classList.contains('open')) { setMenu(false); button.focus(); } });
+const links = [...menu.querySelectorAll('a')];
+const onScroll = () => { $('#nav').classList.toggle('scrolled', scrollY > 20); $('#toTop').classList.toggle('show', scrollY > 600); let active; links.forEach(a => { if($(a.hash).getBoundingClientRect().top <= 160) active = a; }); links.forEach(a => { a.classList.toggle('active', a === active); if(a === active) a.setAttribute('aria-current','location'); else a.removeAttribute('aria-current'); }); };
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+$('#toTop').onclick = () => scrollTo({top:0, behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
 })();
 </script>
 </body>
